@@ -115,6 +115,15 @@ body {
   right: 0;
 }
 
+.galery-photo {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.galery-photo p {
+  font-size: 25px;
+}
+
 /* Garis */
 
 #g-1 {
@@ -145,11 +154,11 @@ body {
 .garis-galery {
   background-color: black;
   position: relative;
-  width: 100vw;
+  width: 90%;
   height: 10px;
   bottom: -80px;
   z-index: -1;
-  margin-left: 10vw;
+  margin-left: 100px;
 }
 
 /* #g-2::before {
