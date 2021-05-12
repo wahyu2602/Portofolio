@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+:root {
+  --jeofin: "Josefin Sans", sans-serif;
+  --lobster: "Lobster", cursive;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: var(--jeofin);
+  margin: 0;
+  padding: 0;
+}
+
+.myname {
+  margin: 5rem 1rem;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.myname::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 450px;
+  left: 0;
+  top: 4rem;
+  background-color: rgb(252, 33, 161);
+  z-index: -1;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.4);
+}
+
+.sosial-media {
+  position: absolute;
+  background-color: rgb(252, 33, 161);
+  height: 20px;
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: 0;
+  right: 10px;
+}
+
+.sosial-media a {
+  color: white;
+  display: inline;
+  margin-left: 10px;
+}
+
+.sosial-media a:hover:nth-child(1) {
+  color: rgb(199, 54, 180);
+}
+
+.sosial-media a:hover:nth-child(2) {
+  color: rgb(8, 8, 8);
+}
+
+.sosial-media a:hover:nth-child(3) {
+  color: rgb(76, 64, 243);
+}
+
+.sosial-media a:hover:nth-child(4) {
+  color: rgb(252, 45, 45);
+}
+
+#about {
+  text-align: center;
+  margin-left: -100px;
+}
+
+.about {
+  margin-left: 5rem;
+}
+
+.about p {
+  width: 90%;
+  font-size: 25px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4);
+}
+
+.about p::before {
+  content: "";
+  width: 20%;
+  height: 70%;
+  background-color: rgb(252, 33, 161);
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  right: -20px;
+}
+
+.galery-project h1 {
+  width: 400px;
+  padding: 10px 20px;
+  position: relative;
+  float: right;
+}
+
+.galery-project h1::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  background-color: rgb(252, 33, 161);
+  z-index: -1;
+  bottom: -10px;
+  right: 0;
+}
+
+/* Garis */
+
+#g-1 {
+  margin-top: 140px;
+  width: 80vw;
+  height: 10px;
+  top: 350px;
+  background-color: black;
+  position: absolute;
+}
+
+#g-2 {
+  width: 20px;
+  height: 100px;
+  margin-top: 150px;
+  margin-left: 20vh;
+  background-color: rgb(252, 33, 161);
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.4);
+}
+
+#g-2 h1 {
+  padding-top: 30px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.garis-galery {
+  background-color: black;
+  position: relative;
+  width: 100vw;
+  height: 10px;
+  bottom: -80px;
+  z-index: -1;
+  margin-left: 10vw;
+}
+
+/* #g-2::before {
+  content: "";
+  width: 20px;
+  height: 100px;
+  left: 20vh;
+  position: absolute;
+  background-color: rgb(252, 33, 161);
+  z-index: -1;
+} */
+
+/* Screen Handphone */
+@media (max-width: 800px) {
+  .myname {
+    font-size: 1.8rem;
+  }
+
+  .myname h3 {
+    font-size: 1.3rem;
+  }
+
+  .myname::before {
+    width: 45px;
+    height: 300px;
+  }
+
+  #g-1 {
+    margin-top: -10px;
+  }
+
+  .about {
+    margin-left: 1rem;
+  }
+
+  #about {
+    margin-top: -100px;
+  }
+
+  #g-2 {
+    margin-top: -10px;
+  }
+
+  .garis-galery {
+    margin-left: 0;
+  }
+}
